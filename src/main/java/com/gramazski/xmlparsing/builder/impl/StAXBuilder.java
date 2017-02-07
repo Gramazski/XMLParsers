@@ -1,18 +1,21 @@
 package com.gramazski.xmlparsing.builder.impl;
 
-import com.gramazski.xmlparsing.builder.IXMLBuilder;
+import com.gramazski.xmlparsing.builder.AbstractXMLBuilder;
 import com.gramazski.xmlparsing.entity.Devices;
 
 /**
  * Created by gs on 07.02.2017.
  */
-//Will be realized
-public class StAXBuilder implements IXMLBuilder {
-    public Devices parse() {
-        return null;
+public class StAXBuilder extends AbstractXMLBuilder {
+    public StAXBuilder(){
+        super();
     }
 
-    public void writeAsXML(Devices rootObject, String fileName) {
+    public StAXBuilder(Devices devices){
+        super(devices);
+    }
+
+    public void buildDevices(String fileName) {
 
     }
 }
