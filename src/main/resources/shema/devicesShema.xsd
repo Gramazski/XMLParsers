@@ -1,1 +1,51 @@
-<!--Just empty-->
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/devices"
+        xmlns:tns="http://www.example.com/devices"
+        elementFormDefault="qualified">
+    <element name="devices">
+        <complexType>
+            <sequence>
+                <element name="device"
+                         type="tns:Device"
+                         minOccurs="2"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="Device">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="price" type="positiveInteger"/>
+            <element name="port" type="tns:Port"/>
+            <element name="origin" type="tns:Origin"/>
+        </sequence>
+        <attribute name="deviceId" type="tns:DeviceId" use="required" />
+        <attribute name="type" use="optional" default="peripheral">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="peripheral"/>
+                    <enumeration value="non-peripheral"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+    <simpleType name="DeviceId">
+        <restriction base="ID">
+            <pattern value="[a-zA-Z0-9]{7,19}"/>
+        </restriction>
+    </simpleType>
+    <complexType name="Origin">
+        <sequence>
+            <element name="country" type="string" />
+            <element name="city" type="string" />
+        </sequence>
+    </complexType>
+    <simpleType name="Port">
+        <restriction base="string">
+            <enumeration value="COM"/>
+            <enumeration value="USB"/>
+            <enumeration value="LPT"/>
+        </restriction>
+    </simpleType>
+</schema>

@@ -1,0 +1,24 @@
+<devices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.com/devices"
+          xsi:schemaLocation="http://www.example.com/devices devicesShema.xsd">
+
+    <device deviceId="A123454" type="non-peripheral">
+        <name>First</name>
+        <price>10</price>
+        <port>COM</port>
+        <origin>
+            <country>Belarus</country>
+            <city>Minsk</city>
+        </origin>
+    </device>
+
+    <device deviceId="B123454" type="peripheral">
+        <name>Second</name>
+        <price>20</price>
+        <port>LPT</port>
+        <origin>
+            <country>Belarus</country>
+            <city>Brest</city>
+        </origin>
+    </device>
+</devices>
