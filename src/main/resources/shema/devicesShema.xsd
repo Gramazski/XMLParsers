@@ -3,16 +3,22 @@
         targetNamespace="http://www.example.com/devices"
         xmlns:tns="http://www.example.com/devices"
         elementFormDefault="qualified">
+    <!--Elements description-->
+    <element name="device" type="tns:Device" abstract="true"/>
+    <element name="cooler" type="tns:Cooler" substitutionGroup="tns:device"/>
+    <element name="cpu" type="tns:CPU" substitutionGroup="tns:device"/>
+    <!--Root element-->
     <element name="devices">
         <complexType>
             <sequence>
-                <element name="device"
-                         type="tns:Device"
+                <element ref="tns:device"
                          minOccurs="2"
                          maxOccurs="unbounded" />
             </sequence>
         </complexType>
     </element>
+    <!--Complex types-->
+    <!--Base type Device-->
     <complexType name="Device">
         <sequence>
             <element name="name" type="string"/>
@@ -30,22 +36,91 @@
             </simpleType>
         </attribute>
     </complexType>
-    <simpleType name="DeviceId">
-        <restriction base="ID">
-            <pattern value="[a-zA-Z0-9]{7,19}"/>
-        </restriction>
-    </simpleType>
+    <!--Extension types-->
+    <complexType name="Cooler">
+        <complexContent>
+            <extension base="tns:Device">
+                <sequence>
+                    <element name="noiseLimit" type="positiveInteger"/>
+                    <element name="rotationSpeed" type="positiveInteger"/>
+                    <element name="brand" type="tns:CoolerBrand"/>
+                </sequence>
+                <attribute name="appointment" type="tns:CoolerAppointment" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="CPU">
+        <complexContent>
+            <extension base="tns:Device">
+                <sequence>
+                    <element name="crystal" type="tns:CrystalCodeName"/>
+                    <element name="frequency" type="positiveInteger"/>
+                    <element name="coresNumber" type="positiveInteger"/>
+                    <element name="complexName" type="tns:CPUComplexName"/>
+                </sequence>
+                <attribute name="socket" type="tns:Socket" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!--Other complex types-->
     <complexType name="Origin">
         <sequence>
             <element name="country" type="string" />
             <element name="city" type="string" />
         </sequence>
     </complexType>
+    <complexType name="CPUComplexName">
+        <sequence>
+            <element name="brand" type="tns:CPUBrand"/>
+            <element name="model" type="string"/>
+        </sequence>
+    </complexType>
+    <!--Simple types-->
+    <simpleType name="DeviceId">
+        <restriction base="ID">
+            <pattern value="[a-zA-Z0-9]{7,19}"/>
+        </restriction>
+    </simpleType>
+    <!--Enums-->
     <simpleType name="Port">
         <restriction base="string">
             <enumeration value="COM"/>
             <enumeration value="USB"/>
             <enumeration value="LPT"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="CoolerBrand">
+        <restriction base="string">
+            <enumeration value="STC"/>
+            <enumeration value="SuperMicro"/>
+            <enumeration value="Gembird"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="CoolerAppointment">
+        <restriction base="string">
+            <enumeration value="SystemUnit"/>
+            <enumeration value="CPU"/>
+            <enumeration value="HardDrive"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="CrystalCodeName">
+        <restriction base="string">
+            <enumeration value="Broadwell"/>
+            <enumeration value="Richwell"/>
+            <enumeration value="Haswell"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Socket">
+        <restriction base="string">
+            <enumeration value="LGA1150"/>
+            <enumeration value="FM2"/>
+            <enumeration value="LGA2011-3"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="CPUBrand">
+        <restriction base="string">
+            <enumeration value="Intel"/>
+            <enumeration value="AMD"/>
         </restriction>
     </simpleType>
 </schema>

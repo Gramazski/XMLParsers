@@ -2,7 +2,20 @@
           xmlns="http://www.example.com/devices"
           xsi:schemaLocation="http://www.example.com/devices devicesShema.xsd">
 
-    <device deviceId="A123454" type="non-peripheral">
+    <cooler deviceId="S123456" appointment="CPU">
+        <name>Third</name>
+        <price>10</price>
+        <port>COM</port>
+        <origin>
+            <country>Japan</country>
+            <city>Tokio</city>
+        </origin>
+        <noiseLimit>120</noiseLimit>
+        <rotationSpeed>1200</rotationSpeed>
+        <brand>Gembird</brand>
+    </cooler>
+
+    <cpu deviceId="K15441548" socket="LGA1150">
         <name>First</name>
         <price>10</price>
         <port>COM</port>
@@ -10,15 +23,12 @@
             <country>Belarus</country>
             <city>Minsk</city>
         </origin>
-    </device>
-
-    <device deviceId="B123454" type="peripheral">
-        <name>Second</name>
-        <price>20</price>
-        <port>LPT</port>
-        <origin>
-            <country>Belarus</country>
-            <city>Brest</city>
-        </origin>
-    </device>
+        <crystal>Broadwell</crystal>
+        <frequency>1200</frequency>
+        <coresNumber>4</coresNumber>
+        <complexName>
+            <brand>Intel</brand>
+            <model>FGChg-90</model>
+        </complexName>
+    </cpu>
 </devices>
