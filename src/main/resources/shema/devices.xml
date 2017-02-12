@@ -1,6 +1,6 @@
 <devices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns="http://www.example.com/devices"
-          xsi:schemaLocation="http://www.example.com/devices devicesShema.xsd">
+          xmlns="http://www.gramazski.com/xmlparsing/entity/devices"
+          xsi:schemaLocation="http://www.gramazski.com/xmlparsing/entity/devices devicesShema.xsd">
 
     <cooler deviceId="S123456" appointment="CPU">
         <name>Third</name>
