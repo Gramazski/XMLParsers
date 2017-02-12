@@ -42,8 +42,12 @@ import java.util.List;
 @XmlRootElement(name = "devices")
 public class Devices {
 
-    @XmlElementRef(name = "device", namespace = "http://www.example.com/devices", type = JAXBElement.class)
-    protected List<JAXBElement<? extends Device>> device;
+    @XmlElementRef(name = "device", namespace = "http://www.gramazski.com/xmlparsing/entity/devices", type = JAXBElement.class)
+    protected List<Device> device;
+
+    public Devices(){
+        device = new ArrayList<Device>();
+    }
 
     /**
      * Gets the value of the device property.
@@ -69,11 +73,11 @@ public class Devices {
      *
      *
      */
-    public List<JAXBElement<? extends Device>> getDevice() {
-        if (device == null) {
-            device = new ArrayList<JAXBElement<? extends Device>>();
-        }
+    public List<Device> getDevice() {
         return this.device;
     }
 
+    public void addDevice(Device device) {
+        this.device.add(device);
+    }
 }

@@ -15,6 +15,7 @@ import java.util.Map;
 public class DeviceFactoriesManager {
     private Map<String, DeviceFactory> factoryMap;
 
+    //Can be use as singleton
     public DeviceFactoriesManager(){
         factoryMap = new HashMap<String, DeviceFactory>();
         factoryMap.put("cooler", new CoolerFactory());
@@ -23,7 +24,7 @@ public class DeviceFactoriesManager {
 
     public Device createDevice(EntityStringDescriptor deviceDescriptor){
         DeviceFactory deviceFactory = getDeviceFactory(deviceDescriptor.getDeviceName());
-        Device device = deviceFactory.createDevice(deviceDescriptor.getParameters());
+        Device device = deviceFactory.createDevice(deviceDescriptor.getParameters(), deviceDescriptor.getAttributes());
 
         return device;
     }

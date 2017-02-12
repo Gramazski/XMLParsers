@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742ab66d-78ff-41b7-b72f-155aad3a1f88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceErrorHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/Devices.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/Devices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/shema/devices.xml" afterPath="$PROJECT_DIR$/src/main/resources/shema/devices.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" />
     </list>
     <ignored path="XMLParsers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,22 +34,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="devices.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/shema/devices.xml">
+      <file leaf-file-name="CPUFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
-              <folding />
+            <state relative-caret-position="400">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#CPUFactory#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java">
+      <file leaf-file-name="DeviceFactoriesManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="26" column="117" selection-start-line="26" selection-start-column="117" selection-end-line="26" selection-end-column="117" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="434">
-              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,11 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceFactoriesManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java">
+      <file leaf-file-name="devices.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/shema/devices.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="289">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,28 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityStringDescriptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java">
+      <file leaf-file-name="DeviceHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-              <folding>
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPUFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,8 +108,8 @@
       <file leaf-file-name="SAXBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="241">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SAXBuilderTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SAXBuilderTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -130,29 +129,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Devices.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/Devices.java">
+      <file leaf-file-name="EntityStringDescriptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+            <state relative-caret-position="168">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#Devices#0" expanded="false" />
-                <element signature="docComment;method#getDevice#0;class#Devices#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,17 +190,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/hierarchy/Device.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/hierarchy/Cooler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/hierarchy/CPU.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/Devices.java" />
         <option value="$PROJECT_DIR$/src/main/resources/shema/devicesShema.xsd" />
-        <option value="$PROJECT_DIR$/src/main/resources/shema/devices.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/Devices.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/shema/devices.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java" />
       </list>
     </option>
   </component>
@@ -294,6 +281,38 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gramazski" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xmlparsing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="builder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SAXBuilderTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -635,6 +654,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="descriptor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XMLParsers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XMLParsers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gramazski" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xmlparsing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attribute" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1203,7 +1264,7 @@
       <workItem from="1486492439415" duration="7297000" />
       <workItem from="1486533934231" duration="4027000" />
       <workItem from="1486822309793" duration="1161000" />
-      <workItem from="1486896275577" duration="8294000" />
+      <workItem from="1486896275577" duration="11240000" />
     </task>
     <task id="LOCAL-00001" summary="Templates for XML builders created. Template for root XML element created (name  - Devices). All hierarchy will generate with xsd shema.">
       <created>1486495869437</created>
@@ -1240,19 +1301,50 @@
       <option name="project" value="LOCAL" />
       <updated>1486904922465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Entity factory added. Manager for controlling entity creating added.">
+      <created>1486908228225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1486908228225</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 16h 29m 37s.xml">
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 21m 29s.xml">
       <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 16h 41m 18s.xml">
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 24m 04s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 25m 12s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 26m 04s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 26m 38s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 27m 14s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 31m 05s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 31m 41s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 32m 58s.xml">
+      <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SAXBuilderTest_buildDevices - 2017.02.12 at 17h 52m 06s.xml">
       <configuration name="SAXBuilderTest.buildDevices" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20779000" />
+    <option name="totallyTimeSpent" value="23725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -1266,7 +1358,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1302,36 +1394,26 @@
     <MESSAGE value="Start xsd configuration &amp;&amp; xml added." />
     <MESSAGE value="XSD shema updated, validation complete." />
     <MESSAGE value="Entity generated by XSD shema. XSD shema title ways changed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Entity generated by XSD shema. XSD shema title ways changed." />
+    <MESSAGE value="Entity factory added. Manager for controlling entity creating added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Entity factory added. Manager for controlling entity creating added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java</url>
-          <line>17</line>
+          <line>20</line>
           <properties />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java</url>
-          <line>25</line>
+          <line>29</line>
           <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1340,45 +1422,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/StAXBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#StAXBuilder#0" expanded="false" />
-            <element signature="e#275#276#0" expanded="false" />
-            <element signature="e#298#299#0" expanded="false" />
-            <element signature="e#340#341#0" expanded="false" />
-            <element signature="e#370#371#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/DOMParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#295#296#0" expanded="false" />
-            <element signature="e#322#323#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#295#296#0" expanded="false" />
-            <element signature="e#322#323#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/StAXParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1592,16 +1635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/attribute/CoolerBrand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#CoolerBrand#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/attribute/CPUBrand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1622,16 +1655,6 @@
             <element signature="docComment;method#setBrand#0;class#CPUComplexName#0" expanded="false" />
             <element signature="docComment;method#getModel#0;class#CPUComplexName#0" expanded="false" />
             <element signature="docComment;method#setModel#0;class#CPUComplexName#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/attribute/CrystalCodeName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding>
-            <element signature="docComment;class#CrystalCodeName#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1670,24 +1693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/hierarchy/Cooler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding>
-            <element signature="docComment;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#getNoiseLimit#0;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#setNoiseLimit#0;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#getRotationSpeed#0;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#setRotationSpeed#0;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#getBrand#0;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#setBrand#0;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#getAppointment#0;class#Cooler#0" expanded="false" />
-            <element signature="docComment;method#setAppointment#0;class#Cooler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/shema/com/example/devices/ObjectFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1700,14 +1705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/shema/devicesShema.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1732,9 +1729,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/AbstractXMLBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/hierarchy/Cooler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="docComment;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#getNoiseLimit#0;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#setNoiseLimit#0;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#getRotationSpeed#0;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#setRotationSpeed#0;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#getBrand#0;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#setBrand#0;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#getAppointment#0;class#Cooler#0" expanded="false" />
+            <element signature="docComment;method#setAppointment#0;class#Cooler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/attribute/CoolerBrand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+          <folding>
+            <element signature="docComment;class#CoolerBrand#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/attribute/CrystalCodeName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="docComment;class#CrystalCodeName#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/hierarchy/Device.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="-433">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Device#0" expanded="false" />
@@ -1755,18 +1814,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/AbstractXMLBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/Devices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+        <state relative-caret-position="349">
+          <caret line="44" column="99" selection-start-line="44" selection-start-column="99" selection-end-line="44" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Devices#0" expanded="false" />
@@ -1775,68 +1826,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/shema/devicesShema.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        <state relative-caret-position="105">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/shema/devices.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
+        <state relative-caret-position="289">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CPUFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CPUFactory#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" column="117" selection-start-line="26" selection-start-column="117" selection-end-line="26" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1845,23 +1885,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="168">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/manager/DeviceFactoriesManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/handler/DeviceHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
