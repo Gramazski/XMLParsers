@@ -8,17 +8,11 @@ import java.util.Map;
  */
 public class EntityStringDescriptor {
     private String deviceName;
-    private String parameters;
     private Map<String, String> attributes;
 
     public EntityStringDescriptor(String deviceName){
         this.deviceName = deviceName;
-        this.parameters = "";
         this.attributes = new HashMap<String, String>();
-    }
-
-    public void addParameter(String parameter){
-        parameters += parameter + ";";
     }
 
     public void addAttribute(String attributeName, String attribute){
@@ -29,10 +23,6 @@ public class EntityStringDescriptor {
 
     public String getDeviceName() {
         return deviceName;
-    }
-
-    public String getParameters() {
-        return parameters;
     }
 
     public Map<String, String> getAttributes() {

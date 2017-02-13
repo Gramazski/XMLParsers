@@ -24,7 +24,7 @@ public class DeviceFactoriesManager {
 
     public Device createDevice(EntityStringDescriptor deviceDescriptor){
         DeviceFactory deviceFactory = getDeviceFactory(deviceDescriptor.getDeviceName());
-        Device device = deviceFactory.createDevice(deviceDescriptor.getParameters(), deviceDescriptor.getAttributes());
+        Device device = deviceFactory.createDevice(deviceDescriptor.getAttributes());
 
         return device;
     }

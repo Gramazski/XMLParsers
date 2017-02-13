@@ -13,18 +13,20 @@ public class DeviceHandler extends DefaultHandler {
     private Devices devices;
     private EntityStringDescriptor descriptor;
     private DeviceFactoriesManager factoriesManager;
+    private String currentInnerParameter;
 
     public DeviceHandler() {
         devices = new Devices();
         factoriesManager = new DeviceFactoriesManager();
+        currentInnerParameter = "";
     }
+
     public Devices getDevices() {
         return devices;
     }
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attrs) {
-        //Just test
         if (isValidElementType(localName)){
             descriptor = new EntityStringDescriptor(localName);
             for (int i = 0; i < attrs.getLength(); i++){
@@ -39,6 +41,11 @@ public class DeviceHandler extends DefaultHandler {
         if ((descriptor != null) && (isValidElementType(localName))){
             devices.addDevice(factoriesManager.createDevice(descriptor));
         }
+
+        if (!(currentInnerParameter.equals("")) && (descriptor != null)){
+            descriptor.addAttribute(localName, currentInnerParameter);
+            currentInnerParameter = "";
+        }
     }
 
     @Override
@@ -46,7 +53,7 @@ public class DeviceHandler extends DefaultHandler {
         //Just test
         String parameter = new String(ch, start, length).trim();
         if ((descriptor != null) && (!parameter.equals(""))){
-            descriptor.addParameter(parameter);
+            currentInnerParameter = parameter;
         }
     }
 

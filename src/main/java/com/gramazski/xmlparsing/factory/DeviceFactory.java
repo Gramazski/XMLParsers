@@ -8,5 +8,5 @@ import java.util.Map;
  * Created by gs on 12.02.2017.
  */
 public abstract class DeviceFactory {
-    public abstract Device createDevice(String data, Map<String, String> attributes);
+    public abstract Device createDevice(Map<String, String> attributes);
 }
