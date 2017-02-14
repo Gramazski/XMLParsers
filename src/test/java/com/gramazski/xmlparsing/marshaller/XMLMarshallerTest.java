@@ -31,7 +31,7 @@ public class XMLMarshallerTest {
     @Test
     public void generateXML() throws Exception {
         XMLMarshaller xmlMarshaller = new XMLMarshaller();
-        xmlMarshaller.generateXML(devices, "src/main/resources/shema/newDevices1.xml");
+        xmlMarshaller.generateXML(devices, "src/main/resources/shema/newDevices.xml");
         Assert.assertTrue(true);
     }
 

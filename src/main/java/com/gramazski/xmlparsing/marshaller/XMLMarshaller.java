@@ -1,6 +1,7 @@
 package com.gramazski.xmlparsing.marshaller;
 
 import com.gramazski.xmlparsing.entity.Devices;
+import com.gramazski.xmlparsing.exception.XMLMarshallerException;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -12,18 +13,16 @@ import java.io.FileOutputStream;
  * Created by gs on 14.02.2017.
  */
 public class XMLMarshaller {
-    public void generateXML(Devices devices, String filePath){
+    public void generateXML(Devices devices, String filePath) throws XMLMarshallerException{
         try {
             JAXBContext context = JAXBContext.newInstance(Devices.class);
             Marshaller m = context.createMarshaller();
 
             m.marshal(devices, new FileOutputStream(filePath));
-            m.marshal(devices, System.out);
-            System.out.println("XML-файл создан");
         } catch (FileNotFoundException e) {
-            System.out.println("XML-файл не может быть создан: " + e);
+            throw new XMLMarshallerException("File " + filePath +" not found", e);
         } catch (JAXBException e) {
-            System.out.println("JAXB-контекст ошибочен " + e);
+            throw new XMLMarshallerException("JAXB-content incorrect: " + e.getMessage(), e);
         }
     }
 }
