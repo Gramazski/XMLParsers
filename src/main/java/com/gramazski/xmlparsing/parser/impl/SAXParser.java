@@ -10,7 +10,6 @@ import org.apache.logging.log4j.Level;
 /**
  * Created by gs on 07.02.2017.
  */
-//Will be realized
 public class SAXParser implements IXMLParser {
     private SAXBuilder xmlBuilder;
 

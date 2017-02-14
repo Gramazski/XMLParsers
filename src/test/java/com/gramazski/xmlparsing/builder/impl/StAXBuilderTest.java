@@ -15,7 +15,7 @@ public class StAXBuilderTest {
     public void init(){
         try {
             StAXBuilder staxBuilder = new StAXBuilder();
-            staxBuilder.buildDevices("src/main/resources/shema/newDevices.xml");
+            staxBuilder.buildDevices("src/main/resources/shema/devices.xml");
             devices = staxBuilder.getDevices();
         }
         catch (XMLBuildingException ex){

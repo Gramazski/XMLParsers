@@ -72,6 +72,7 @@ public class StAXBuilder extends AbstractXMLBuilder {
                 case XMLStreamConstants.START_ELEMENT:
                     String name = reader.getLocalName();
                     String content = getXMLText(reader);
+
                     if (!"".equals(content.trim())){
                         deviceDescriptor.addAttribute(name, content);
                     }
@@ -89,11 +90,14 @@ public class StAXBuilder extends AbstractXMLBuilder {
     }
 
     private String getXMLText(XMLStreamReader reader) throws XMLStreamException {
-        String text = null;
+        String text = "";
         if (reader.hasNext()) {
             reader.next();
-            text = reader.getText();
+            if (reader.hasText()){
+                text = reader.getText();
+            }
         }
+
         return text;
     }
 
