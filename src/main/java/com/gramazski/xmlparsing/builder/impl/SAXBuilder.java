@@ -1,7 +1,6 @@
 package com.gramazski.xmlparsing.builder.impl;
 
 import com.gramazski.xmlparsing.builder.AbstractXMLBuilder;
-import com.gramazski.xmlparsing.entity.Devices;
 import com.gramazski.xmlparsing.handler.DeviceHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
@@ -26,11 +25,6 @@ public class SAXBuilder extends AbstractXMLBuilder {
             //Add logging
             //System.err.print("ошибка SAX парсера: " + e);
         }
-    }
-
-    //Will be removed
-    public SAXBuilder(Devices devices){
-        super(devices);
     }
 
     public void buildDevices(String fileName) {

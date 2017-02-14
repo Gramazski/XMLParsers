@@ -37,7 +37,6 @@ public class DeviceHandler extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) {
-        //Just test
         if ((descriptor != null) && (isValidElementType(localName))){
             devices.addDevice(factoriesManager.createDevice(descriptor));
         }
@@ -50,7 +49,6 @@ public class DeviceHandler extends DefaultHandler {
 
     @Override
     public void characters(char[] ch, int start, int length) {
-        //Just test
         String parameter = new String(ch, start, length).trim();
         if ((descriptor != null) && (!parameter.equals(""))){
             currentInnerParameter = parameter;
