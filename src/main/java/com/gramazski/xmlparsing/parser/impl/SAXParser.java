@@ -12,11 +12,11 @@ public class SAXParser implements IXMLParser {
     private SAXBuilder xmlBuilder;
 
     public SAXParser(){
-        xmlBuilder = new SAXBuilder();
+        //xmlBuilder = new SAXBuilder();
     }
 
     public Devices parse(String fileName) {
-        xmlBuilder.buildDevices(fileName);
+        //xmlBuilder.buildDevices(fileName);
         return xmlBuilder.getDevices();
     }
 

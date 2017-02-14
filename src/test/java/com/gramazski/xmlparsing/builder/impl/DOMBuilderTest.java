@@ -2,6 +2,7 @@ package com.gramazski.xmlparsing.builder.impl;
 
 import com.gramazski.xmlparsing.entity.Devices;
 import com.gramazski.xmlparsing.exception.BuilderInitializationException;
+import com.gramazski.xmlparsing.exception.XMLBuildingException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,6 +20,9 @@ public class DOMBuilderTest {
             devices = domBuilder.getDevices();
         }
         catch (BuilderInitializationException ex){
+            Assert.fail(ex.getMessage());
+        }
+        catch (XMLBuildingException ex){
             Assert.fail(ex.getMessage());
         }
 

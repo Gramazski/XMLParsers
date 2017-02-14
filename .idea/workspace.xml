@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742ab66d-78ff-41b7-b72f-155aad3a1f88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/exception/XMLBuildingException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/AbstractXMLBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/AbstractXMLBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/DOMBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/DOMBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/exception/BuilderInitializationException.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/exception/BuilderInitializationException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/DOMBuilderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/DOMBuilderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" />
     </list>
@@ -68,8 +63,8 @@
       <file leaf-file-name="DOMBuilderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/DOMBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="235">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="26" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,17 +72,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SAXBuilderTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SAXBuilderTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="357">
+              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StAXBuilder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StAXBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/StAXBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -99,24 +94,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SAXParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityStringDescriptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/descriptor/EntityStringDescriptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;class#EntityStringDescriptor#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -186,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/shema/devicesShema.xsd" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/entity/Devices.java" />
         <option value="$PROJECT_DIR$/src/main/resources/shema/devices.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/IXMLParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/impl/CoolerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/factory/DeviceFactory.java" />
@@ -197,11 +189,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/StAXBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/exception/BuilderInitializationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/exception/XMLBuildingException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/DOMBuilderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/AbstractXMLBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/DOMBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/impl/SAXBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/DOMBuilderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java" />
       </list>
     </option>
   </component>
@@ -1319,7 +1312,7 @@
       <workItem from="1486822309793" duration="1161000" />
       <workItem from="1486896275577" duration="13460000" />
       <workItem from="1486966077241" duration="4111000" />
-      <workItem from="1487067934876" duration="4337000" />
+      <workItem from="1487067934876" duration="4455000" />
     </task>
     <task id="LOCAL-00001" summary="Templates for XML builders created. Template for root XML element created (name  - Devices). All hierarchy will generate with xsd shema.">
       <created>1486495869437</created>
@@ -1384,13 +1377,17 @@
       <option name="project" value="LOCAL" />
       <updated>1487071714338</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Exception added.">
+      <created>1487072343366</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1487072343366</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DOMBuilderTest - 2017.02.14 at 14h 03m 41s.xml">
-      <configuration name="DOMBuilderTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DOMBuilderTest - 2017.02.14 at 14h 09m 06s.xml">
       <configuration name="DOMBuilderTest" configurationId="JUnit" />
     </history-entry>
@@ -1418,9 +1415,12 @@
     <history-entry file="DOMBuilderTest - 2017.02.14 at 14h 27m 16s.xml">
       <configuration name="DOMBuilderTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DOMBuilderTest - 2017.02.14 at 14h 40m 42s.xml">
+      <configuration name="DOMBuilderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34393000" />
+    <option name="totallyTimeSpent" value="34511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -1434,7 +1434,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1474,14 +1474,15 @@
     <MESSAGE value="Factories updated, attribute creating added. Also Entity string descriptor get private attribute map." />
     <MESSAGE value="Descriptor updated =&gt; parameters excluded, use only attribute map." />
     <MESSAGE value="DOM builder added. Test for DOM builder added." />
-    <option name="LAST_COMMIT_MESSAGE" value="DOM builder added. Test for DOM builder added." />
+    <MESSAGE value="Exception added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java</url>
-          <line>26</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -1546,7 +1547,7 @@
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
             <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1677,17 +1678,6 @@
         <state relative-caret-position="125">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#413#414#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1868,24 +1858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/DOMBuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/builder/AbstractXMLBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1929,6 +1901,32 @@
           <folding>
             <element signature="docComment;class#StAXBuilder#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gramazski/xmlparsing/parser/impl/SAXParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/DOMBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gramazski/xmlparsing/builder/impl/SAXBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
