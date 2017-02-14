@@ -1,6 +1,7 @@
 package com.gramazski.xmlparsing.builder;
 
 import com.gramazski.xmlparsing.entity.Devices;
+import com.gramazski.xmlparsing.exception.XMLBuildingException;
 
 /**
  * Created by gs on 07.02.2017.
@@ -17,5 +18,5 @@ public abstract class AbstractXMLBuilder {
         return devices;
     }
 
-    public abstract void buildDevices(String fileName);
+    public abstract void buildDevices(String fileName) throws XMLBuildingException;
 }

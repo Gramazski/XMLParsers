@@ -3,6 +3,8 @@ package com.gramazski.xmlparsing.builder.impl;
 import com.gramazski.xmlparsing.builder.AbstractXMLBuilder;
 import com.gramazski.xmlparsing.entity.descriptor.EntityStringDescriptor;
 import com.gramazski.xmlparsing.entity.hierarchy.Device;
+import com.gramazski.xmlparsing.exception.BuilderInitializationException;
+import com.gramazski.xmlparsing.exception.XMLBuildingException;
 import com.gramazski.xmlparsing.factory.manager.DeviceFactoriesManager;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
@@ -22,7 +24,7 @@ public class DOMBuilder extends AbstractXMLBuilder {
     private List<String> requestedElementNameList;
     private DeviceFactoriesManager factoriesManager;
 
-    public DOMBuilder(){
+    public DOMBuilder() throws BuilderInitializationException{
         super();
         requestedElementNameList = new ArrayList<String>();
         requestedElementNameList.add("cooler");
@@ -32,11 +34,11 @@ public class DOMBuilder extends AbstractXMLBuilder {
         try {
             documentBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            System.err.println("Ошибка конфигурации парсера: " + e);
+            throw new BuilderInitializationException("Exception with DOMBuilder initialization: error parser configuration", e);
         }
     }
 
-    public void buildDevices(String fileName) {
+    public void buildDevices(String fileName) throws XMLBuildingException {
         Document doc = null;
         try {
             doc = documentBuilder.parse(fileName);
@@ -50,9 +52,9 @@ public class DOMBuilder extends AbstractXMLBuilder {
                 }
             }
         } catch (IOException e) {
-            System.err.println("File error or I/O error: " + e);
+            throw new XMLBuildingException("I/O problem in DOM builder: " + e.getMessage(), e);
         } catch (SAXException e) {
-            System.err.println("Parsing failure: " + e);
+            throw new XMLBuildingException("Parsing failure: " + e.getMessage(), e);
         }
     }
 

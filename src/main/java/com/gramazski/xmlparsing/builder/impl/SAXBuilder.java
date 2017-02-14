@@ -1,6 +1,8 @@
 package com.gramazski.xmlparsing.builder.impl;
 
 import com.gramazski.xmlparsing.builder.AbstractXMLBuilder;
+import com.gramazski.xmlparsing.exception.BuilderInitializationException;
+import com.gramazski.xmlparsing.exception.XMLBuildingException;
 import com.gramazski.xmlparsing.handler.DeviceHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
@@ -15,25 +17,24 @@ public class SAXBuilder extends AbstractXMLBuilder {
     private DeviceHandler deviceHandler;
     private XMLReader reader;
 
-    public SAXBuilder(){
+    public SAXBuilder() throws BuilderInitializationException{
         super();
         deviceHandler = new DeviceHandler();
         try {
             reader = XMLReaderFactory.createXMLReader();
             reader.setContentHandler(deviceHandler);
         } catch (SAXException e) {
-            //Add logging
-            //System.err.print("ошибка SAX парсера: " + e);
+            throw new BuilderInitializationException("Exception with SAXBuilder initialization.Course: " + e.getMessage(), e);
         }
     }
 
-    public void buildDevices(String fileName) {
+    public void buildDevices(String fileName) throws XMLBuildingException {
         try {
             reader.parse(fileName);
         } catch (SAXException e) {
-            System.err.print("ошибка SAX парсера: " + e);
+            throw new XMLBuildingException("SAX parsing problem: " + e.getMessage(), e);
         } catch (IOException e) {
-            System.err.print("ошибка I/О потока: " + e);
+            throw new XMLBuildingException("I/O problem in SAX builder: " + e.getMessage(), e);
         }
 
         devices = deviceHandler.getDevices();

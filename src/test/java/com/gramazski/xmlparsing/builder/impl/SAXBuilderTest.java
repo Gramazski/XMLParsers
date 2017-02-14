@@ -1,6 +1,7 @@
 package com.gramazski.xmlparsing.builder.impl;
 
 import com.gramazski.xmlparsing.entity.Devices;
+import com.gramazski.xmlparsing.exception.BuilderInitializationException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,9 +13,14 @@ public class SAXBuilderTest {
     private static Devices devices;
     @Before
     public void init(){
-        SAXBuilder saxBuilder = new SAXBuilder();
-        saxBuilder.buildDevices("src/main/resources/shema/devices.xml");
-        devices = saxBuilder.getDevices();
+        try {
+            SAXBuilder saxBuilder = new SAXBuilder();
+            saxBuilder.buildDevices("src/main/resources/shema/devices.xml");
+            devices = saxBuilder.getDevices();
+        }
+        catch (BuilderInitializationException ex){
+            Assert.fail(ex.getMessage());
+        }
     }
     @Test
     public void buildDevices() throws Exception {
