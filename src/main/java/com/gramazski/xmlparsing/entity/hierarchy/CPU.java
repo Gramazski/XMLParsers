@@ -39,6 +39,7 @@ import java.math.BigInteger;
  * 
  * 
  */
+@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CPU", propOrder = {
     "crystal",

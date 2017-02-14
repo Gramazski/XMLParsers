@@ -37,6 +37,7 @@ import java.math.BigInteger;
  * 
  * 
  */
+@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Cooler", propOrder = {
     "noiseLimit",

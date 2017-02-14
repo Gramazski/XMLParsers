@@ -1,8 +1,6 @@
-<devices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns="http://www.gramazski.com/xmlparsing/entity/devices"
-          xsi:schemaLocation="http://www.gramazski.com/xmlparsing/entity/devices devicesShema.xsd">
-
-    <cooler deviceId="S123456" appointment="CPU" type="peripheral">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<devices xmlns:ns2="http://www.gramazski.com/xmlparsing/entity/devices">
+    <cooler appointment="CPU" deviceId="S123456" type="peripheral">
         <name>Third</name>
         <price>10</price>
         <port>COM</port>
@@ -14,8 +12,19 @@
         <rotationSpeed>1200</rotationSpeed>
         <brand>Gembird</brand>
     </cooler>
-
-    <cpu deviceId="K15441548" type="peripheral" socket="LGA1150">
+    <cooler appointment="HardDrive" deviceId="R534624563">
+        <name>ETC</name>
+        <price>210</price>
+        <port>USB</port>
+        <origin>
+            <country>Poland</country>
+            <city>Lvov</city>
+        </origin>
+        <noiseLimit>120</noiseLimit>
+        <rotationSpeed>1200</rotationSpeed>
+        <brand>Gembird</brand>
+    </cooler>
+    <cpu socket="LGA1150" deviceId="K15441548" type="peripheral">
         <name>First</name>
         <price>10</price>
         <port>COM</port>
@@ -31,8 +40,7 @@
             <model>FGChg-90</model>
         </complexName>
     </cpu>
-
-    <cpu deviceId="W546553625" socket="LGA2011-3">
+    <cpu socket="LGA2011-3" deviceId="W546553625">
         <name>More</name>
         <price>21</price>
         <port>USB</port>
@@ -41,24 +49,11 @@
             <city>Moscow</city>
         </origin>
         <crystal>Broadwell</crystal>
-        <frequency>1700</frequency>
         <coresNumber>4</coresNumber>
+        <frequency>1700</frequency>
         <complexName>
             <brand>Intel</brand>
             <model>GFDGG23</model>
         </complexName>
     </cpu>
-
-    <cooler deviceId="R534624563" appointment="HardDrive">
-        <name>ETC</name>
-        <price>210</price>
-        <port>USB</port>
-        <origin>
-            <country>Poland</country>
-            <city>Lvov</city>
-        </origin>
-        <noiseLimit>120</noiseLimit>
-        <rotationSpeed>1200</rotationSpeed>
-        <brand>Gembird</brand>
-    </cooler>
 </devices>

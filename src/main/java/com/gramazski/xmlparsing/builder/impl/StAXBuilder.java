@@ -30,17 +30,17 @@ public class StAXBuilder extends AbstractXMLBuilder {
 
     public void buildDevices(String fileName) throws XMLBuildingException {
         FileInputStream inputStream = null;
-        XMLStreamReader reader = null;
+
         try {
             inputStream = new FileInputStream(new File(fileName));
-            reader = inputFactory.createXMLStreamReader(inputStream);
+            XMLStreamReader reader = inputFactory.createXMLStreamReader(inputStream);
 
             while (reader.hasNext()) {
                 int type = reader.next();
                 if (type == XMLStreamConstants.START_ELEMENT) {
                      String name = reader.getLocalName();
                     if (isValidElementType(name)) {
-                        Device device = buildStudent(reader);
+                        Device device = buildDevice(reader);
                         devices.addDevice(device);
                     }
                 }
@@ -60,15 +60,21 @@ public class StAXBuilder extends AbstractXMLBuilder {
         }
     }
 
-    private Device buildStudent(XMLStreamReader reader) throws XMLStreamException {
-        EntityStringDescriptor deviceDescriptor = new EntityStringDescriptor(reader.getLocalName());
-        addElementAttributes(deviceDescriptor, reader);
+    private Device buildDevice(XMLStreamReader reader) throws XMLStreamException {
         String startName = reader.getLocalName();
+        EntityStringDescriptor deviceDescriptor = new EntityStringDescriptor(startName);
+
+        addElementAttributes(deviceDescriptor, reader);
+
         while (reader.hasNext()) {
             int type = reader.next();
             switch (type) {
                 case XMLStreamConstants.START_ELEMENT:
-                    deviceDescriptor.addAttribute(reader.getLocalName(), getXMLText(reader));
+                    String name = reader.getLocalName();
+                    String content = getXMLText(reader);
+                    if (!"".equals(content.trim())){
+                        deviceDescriptor.addAttribute(name, content);
+                    }
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     if (startName.equals(reader.getLocalName())){
@@ -79,7 +85,7 @@ public class StAXBuilder extends AbstractXMLBuilder {
             }
         }
 
-        throw new XMLStreamException("Unknown element in tag Student");
+        throw new XMLStreamException("Unknown element in tag " + startName);
     }
 
     private String getXMLText(XMLStreamReader reader) throws XMLStreamException {
