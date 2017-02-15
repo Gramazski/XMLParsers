@@ -121,4 +121,124 @@
         <rotationSpeed>1500</rotationSpeed>
         <brand>STC</brand>
     </cooler>
+
+    <cooler deviceId="S733456" appointment="CPU" type="peripheral">
+        <name>Glawcow</name>
+        <price>723</price>
+        <port>LPT</port>
+        <origin>
+            <country>USA</country>
+            <city>Detroit</city>
+        </origin>
+        <noiseLimit>90</noiseLimit>
+        <rotationSpeed>1400</rotationSpeed>
+        <brand>SuperMicro</brand>
+    </cooler>
+
+    <cpu deviceId="K73441548" type="peripheral" socket="LGA1150">
+        <name>Macro</name>
+        <price>140</price>
+        <port>COM</port>
+        <origin>
+            <country>Belarus</country>
+            <city>Minsk</city>
+        </origin>
+        <crystal>Richwell</crystal>
+        <frequency>1250</frequency>
+        <coresNumber>6</coresNumber>
+        <complexName>
+            <brand>Intel</brand>
+            <model>FGChGH90</model>
+        </complexName>
+    </cpu>
+
+    <cpu deviceId="W736553625" socket="LGA2011-3">
+        <name>MicroFour</name>
+        <price>215</price>
+        <port>COM</port>
+        <origin>
+            <country>Russia</country>
+            <city>Krasnodar</city>
+        </origin>
+        <crystal>Haswell</crystal>
+        <frequency>1750</frequency>
+        <coresNumber>8</coresNumber>
+        <complexName>
+            <brand>Intel</brand>
+            <model>HGYYG3</model>
+        </complexName>
+    </cpu>
+
+    <cooler deviceId="R734624563" appointment="HardDrive">
+        <name>EXC</name>
+        <price>230</price>
+        <port>USB</port>
+        <origin>
+            <country>Poland</country>
+            <city>Warshava</city>
+        </origin>
+        <noiseLimit>130</noiseLimit>
+        <rotationSpeed>1400</rotationSpeed>
+        <brand>STC</brand>
+    </cooler>
+
+    <cooler deviceId="S733456" appointment="HardDrive" type="non-peripheral">
+        <name>Hard</name>
+        <price>400</price>
+        <port>LPT</port>
+        <origin>
+            <country>France</country>
+            <city>Brest</city>
+        </origin>
+        <noiseLimit>20</noiseLimit>
+        <rotationSpeed>1400</rotationSpeed>
+        <brand>SuperMicro</brand>
+    </cooler>
+
+    <cpu deviceId="K73441548" type="peripheral" socket="LGA1150">
+        <name>SomeCPU</name>
+        <price>190</price>
+        <port>USB</port>
+        <origin>
+            <country>Belarus</country>
+            <city>Brest</city>
+        </origin>
+        <crystal>Richwell</crystal>
+        <frequency>1600</frequency>
+        <coresNumber>8</coresNumber>
+        <complexName>
+            <brand>AMD</brand>
+            <model>JKUgd-12</model>
+        </complexName>
+    </cpu>
+
+    <cpu deviceId="W736553625" socket="LGA2011-3">
+        <name>Number</name>
+        <price>231</price>
+        <port>COM</port>
+        <origin>
+            <country>Russia</country>
+            <city>Moscow</city>
+        </origin>
+        <crystal>Haswell</crystal>
+        <frequency>1900</frequency>
+        <coresNumber>8</coresNumber>
+        <complexName>
+            <brand>Intel</brand>
+            <model>HJGFGF5</model>
+        </complexName>
+    </cpu>
+
+    <cooler deviceId="R734624563" appointment="HardDrive">
+        <name>Grand</name>
+        <price>250</price>
+        <port>LPT</port>
+        <origin>
+            <country>Poland</country>
+            <city>Belostok</city>
+        </origin>
+        <noiseLimit>150</noiseLimit>
+        <rotationSpeed>1600</rotationSpeed>
+        <brand>STC</brand>
+    </cooler>
 </devices>
