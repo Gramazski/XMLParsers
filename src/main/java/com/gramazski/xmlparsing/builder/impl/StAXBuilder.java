@@ -29,10 +29,8 @@ public class StAXBuilder extends AbstractXMLBuilder {
     }
 
     public void buildDevices(String fileName) throws XMLBuildingException {
-        FileInputStream inputStream = null;
+        try (FileInputStream inputStream = new FileInputStream(new File(fileName))) {
 
-        try {
-            inputStream = new FileInputStream(new File(fileName));
             XMLStreamReader reader = inputFactory.createXMLStreamReader(inputStream);
 
             while (reader.hasNext()) {
@@ -49,14 +47,8 @@ public class StAXBuilder extends AbstractXMLBuilder {
             throw new XMLBuildingException("StAX parsing error: " + ex.getMessage(), ex);
         } catch (FileNotFoundException ex) {
             throw new XMLBuildingException("File " + fileName + " not found.", ex);
-        } finally {
-            try {
-                if (inputStream != null) {
-                    inputStream.close();
-                }
-            } catch (IOException e) {
-                //Should be logging
-            }
+        } catch (IOException ex){
+            throw new XMLBuildingException("I/O error in StAX parsing", ex);
         }
     }
 

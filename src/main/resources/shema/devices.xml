@@ -61,4 +61,64 @@
         <rotationSpeed>1200</rotationSpeed>
         <brand>Gembird</brand>
     </cooler>
+
+    <cooler deviceId="S423456" appointment="CPU" type="non-peripheral">
+        <name>New</name>
+        <price>100</price>
+        <port>USB</port>
+        <origin>
+            <country>France</country>
+            <city>Paris</city>
+        </origin>
+        <noiseLimit>100</noiseLimit>
+        <rotationSpeed>1000</rotationSpeed>
+        <brand>SuperMicro</brand>
+    </cooler>
+
+    <cpu deviceId="K42441548" type="peripheral" socket="LGA1150">
+        <name>CPUNew</name>
+        <price>190</price>
+        <port>LPT</port>
+        <origin>
+            <country>Belarus</country>
+            <city>Grodno</city>
+        </origin>
+        <crystal>Richwell</crystal>
+        <frequency>1300</frequency>
+        <coresNumber>8</coresNumber>
+        <complexName>
+            <brand>AMD</brand>
+            <model>HJGHy-67</model>
+        </complexName>
+    </cpu>
+
+    <cpu deviceId="W426553625" socket="LGA2011-3">
+        <name>Some</name>
+        <price>201</price>
+        <port>USB</port>
+        <origin>
+            <country>Russia</country>
+            <city>Tver</city>
+        </origin>
+        <crystal>Haswell</crystal>
+        <frequency>1600</frequency>
+        <coresNumber>4</coresNumber>
+        <complexName>
+            <brand>Intel</brand>
+            <model>JHGHBV5</model>
+        </complexName>
+    </cpu>
+
+    <cooler deviceId="R424624563" appointment="HardDrive">
+        <name>Finder</name>
+        <price>420</price>
+        <port>COM</port>
+        <origin>
+            <country>Poland</country>
+            <city>Krakov</city>
+        </origin>
+        <noiseLimit>145</noiseLimit>
+        <rotationSpeed>1500</rotationSpeed>
+        <brand>STC</brand>
+    </cooler>
 </devices>
